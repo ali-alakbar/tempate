@@ -1,0 +1,342 @@
+// =============  
+// Start Global Variables  
+// ============= 
+$color_1: #3a6cf4;
+$color_2: #601cfc;
+$color_3: #fff;
+$color_4: #4e9eff;
+$color_5: #000;
+$font-family_1: 'Poppins', sans-serif;
+$background-color_1: #f0f0f0;
+$background-color_2: #3a6cf4;
+$background-color_3: #0a49f6;
+$background-color_4: #fff;
+$background-color_5: #000016;
+
+// =============  
+// End Global Variables  
+// ============= 
+
+// =============  
+// Start Global Rules  
+// ============= 
+
+* {
+    font-family: $font-family_1;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+section {
+    padding: 100px 200px;
+}
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.social-icons {
+    a {
+        color: $color_3;
+        font-size: 1.7em;
+        padding-right: 30px;
+    }
+}
+// =============  
+// End Global Rules  
+// ============= 
+
+// =============  Start Header  ============= 
+header {
+    background-color: $background-color_1;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px;
+    .logo {
+        text-decoration: none;
+        color: $color_1;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 1.8em;
+    }
+    
+    .navigation {
+        a {
+            color: $color_1;
+            text-decoration: none;
+            font-size: 1.1em;
+            font-weight: 500;
+            padding-left: 30px;
+    
+            &:hover {
+                color: $color_2;
+            }
+        }
+    }
+}
+// =============  End Header  ============= 
+
+
+// =============  Start Landing Page  ============= 
+.landing-page-section {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url("../media/background.jpg") no-repeat;
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+
+    h2 {
+        color: $color_3;
+        font-size: 1.4em;
+        font-weight: 500;
+
+        span {
+            display: inline-block;
+            margin-top: 10px;
+            color: $color_4;
+            font-size: 2.5em;
+            font-weight: 600;
+        }
+    }
+
+    h3 {
+        color: $color_3;
+        font-size: 1.5em;
+        font-weight: 700;
+        letter-spacing: 1px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+    
+    .main-btn {
+        color: $color_3;
+        background-color: $background-color_2;
+        text-decoration: none;
+        font-size: 1.1em;
+        font-weight: 600;
+        display: inline-block;
+        padding: 0.9375em 2.1875em;
+        letter-spacing: 1px;
+        border-radius: 15px;
+        margin-bottom: 40px;
+        transition: 0.7s ease;
+    
+        &:hover {
+            background-color: $background-color_3;
+            transform: scale(1.1);
+        }
+    }
+
+}
+// =============  End Landing Page  ============= 
+// ============= Start Cards Section =============
+.cards{
+    .title {
+        display: flex;
+        justify-content: center;
+        color: $color_1;
+        font-size: 2.2em;
+        font-weight: 800;
+        margin-bottom: 30px;
+    }
+        .card {
+            background-color: $background-color_4;
+            width: 18em;
+            box-shadow: 0 5px 25px #0000003d;
+            border-radius: 10px;
+            padding: 25px;
+            margin: 15px;
+            transition: 0.7s ease;
+        
+            &:hover {
+                transform: scale(1.1);
+            }
+        
+            .icon {
+                color: $color_1;
+                font-size: 8em;
+                text-align: center;
+            }
+            .info {
+                text-align: center;
+                h3 {
+                    color: $color_1;
+                    font-size: 1.2em;
+                    font-weight: 700;
+                    margin: 10px;
+                }
+                p {
+                    font-size: 14px;
+                }
+            }
+        }
+    
+}
+// ============= End Cards Section =============
+// ============= Start Projects Section =============
+
+.projects {
+    background-color: $background-color_5;
+
+    .content {
+        margin-top: 30px;
+        
+        .project-card {
+            background-color: $background-color_4;
+            border: 1px solid #fff;
+            min-height: 14em;
+            width: 15em;
+            overflow: hidden;
+            border-radius: 10px;
+            margin: 20px;
+            transition: 0.7s ease;
+        
+            &:hover {
+                transform: scale(1.1);
+        
+                .project-image {
+                    opacity: 0.9;
+                }
+            }
+            .project-image {
+                img {
+                    width: 100%;
+                }
+            }
+            .project-info {
+                padding: 1em;
+                
+                .project-category {
+                    font-size: 0.8em;
+                    color: $color_5;
+                }
+                
+                .project-title {
+                    display: flex;
+                    justify-content: space-between;
+                    text-transform: uppercase;
+                    font-weight: 800;
+                    margin-top: 10px;
+                    .more-details {
+                        text-decoration: none;
+                        color: $color_1;
+                        &:hover {
+                            color: $color_2;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// ============= End Projects Section =============
+// ============= Start Contact Section =============
+.contact {
+    .icon {
+        font-size: 4.5em;
+    }
+
+    .info {
+        h3 {
+            color: $color_5;
+        }
+
+        p {
+            font-size: 1.5em;
+        }
+    }
+}
+// ============= End Contact Section =============
+
+// ============= Start Footer Section =============
+.footer {
+    background-color: $background-color_5;
+    color: $color_3;
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+    
+    .footer-title {
+        font-size: 1.3em;
+        font-weight: 600;
+    
+        span {
+            color: $color_1;
+        }
+    }
+
+    .social-icons {
+        a {
+            font-size: 1.3em;
+            padding: 0 12px 0 0;
+        }
+    }
+}
+// ============= End Footer Section =============
+
+@media (max-width:1023px) {
+    header {
+        padding: 12px 20px;
+    }
+
+    .navigation {
+        a {
+            padding-left: 10px;
+        }
+    }
+
+    .title {
+        font-size: 1.8em;
+    }
+
+    section {
+        padding: 80px 20px;
+    }
+
+    .main-content {
+        h2 {
+            font-size: 1em;
+        }
+
+        h3 {
+            font-size: 1.6em;
+        }
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width:641px) {
+    body {
+        font-size: 12px;
+    }
+
+    .main-content {
+        h2 {
+            font-size: 0.8em;
+        }
+
+        h3 {
+            font-size: 1.4em;
+        }
+    }
+}
+
+@media (max-width:300px) {
+    body {
+        font-size: 10px;
+    }
+}
